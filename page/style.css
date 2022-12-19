@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300&family=Arimo:wght@700&family=PT+Sans&family=Poppins&family=Roboto&display=swap');
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255);
+}
+
+nav{
+    position: fixed;
+    background-color: rgb(255, 242, 242);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 2.2rem;
+    font-family: 'Roboto', sans-serif;
+    z-index: 2;
+}
+
+nav h2{
+    padding: .4rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+nav .links{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+nav .links button{
+    margin: .4rem;
+    padding: .3rem;
+    border: none;
+    outline: none;
+    border-radius: .4rem;
+    background-color: rgb(255, 242, 242);
+}
+
+nav .links button:hover{
+    background-color: rgb(224, 216, 216);
+    cursor: pointer;
+}
+
+nav .links button a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav .links .active{
+    background-color: rgb(185, 179, 179);
+}
+
+.banner{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(62deg, rgba(143, 181, 219, 0.7), rgba(213, 201, 224, 0.4)),
+             url('img/b3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 3rem;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bolder;
+    padding: 1rem;
+    margin-bottom: .2rem;
+    color: #EDEADE;
+}
+
+.banner h4{
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 1.2rem;
+    color: #a8f0f0;
+}
+
+i{
+    font-size: 1.8rem;
+    padding: .7rem;
+    cursor: pointer;
+}
+
+#insta{
+    color: #fccc63;
+}
+
+#linkedin{
+    color: #0072b1;
+}
+
+#twitter{
+    color: #00acee;
+}
+
+#github{
+    color: #171515;
+}
+
+.socials a{
+    text-decoration: none;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#image{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin-top: -5%;
+    margin-bottom: 2rem;
+}
+
+.card{
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 14px;
+    box-shadow: 0px 0px 16px 8px rgb(172, 166, 166);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.contain{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#head{
+    border-bottom: 2px solid currentColor;
+    color: rgb(100, 79, 52);
+    margin-bottom: 2rem;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+.word{
+    padding: 1rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+font{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+}
+
+.connect{
+    margin: auto;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.connect button{
+    padding: .4rem;
+    margin: 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: .8rem;
+}
+
+#socials{
+    color: rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient(68deg, rgb(24, 241, 220), rgb(235, 208, 208));
+    font-weight: bold;
+}
+
+#email-btn{
+    color: rgba(80, 79, 79, 0.8);
+    background-image: linear-gradient(68deg, rgba(0, 0, 0, 0.3), rgb(235, 193, 193));
+    font-weight: bold;
+}
+
+#projects{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+
+
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    
+}
+
+/* .con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+
+.head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#email-input,
+#name,
+#message{
+    display: block;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: .5rem;
+    padding: 0.84rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+}
+
+#email-input,
+#name{
+    width: 90%;
+}
+
+#email-button{
+    padding: 0.25rem;
+    outline: none;
+    border: 1.23px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    color: rgb(228, 199, 199);
+    background: rgb(66, 63, 63);
+    font-weight: 500;
+}
+
+
+/* .form{
+    position: relative;
+    width: 20rem;
+}
+
+.form input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 1.25rem;
+    background: rgb(255, 255, 255);
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.form label{
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    cursor: text;
+    transition: top 150ms ease-in,
+                left 150ms ease-in,
+                font-size 150ms ease-in;
+}
+
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown).form_input:not(:focus) ~ .form_label{
+    top: -0.5rem;
+    font-size: 0.8rem; 
+    left: 0.8rem;
+    background: rgb(255, 255, 255);
+}
+
+.contains{
+    height: 80vh;
+}
+
+.message-area{
+    padding: 1rem;
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#msg{
+    width: 100%;
+    max-height: 20%;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    outline: none;
+    padding: 1rem;
+    line-height: 1.2rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.span-msg{
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    font-size: 1rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    transition: top 100ms ease-in,
+                left 100ms ease-in,
+                font-size 100ms ease-in;
+}
+
+
+#msg:focus ~ .span-msg,
+#msg:not(:placeholder-shown)#msg:not(:focus) ~ .span-msg{ 
+    top: 0.5rem;
+    background: rgb(255, 255, 255);
+    font-size: 0.8rem;
+}
+
+#send{
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+    font-family: 'PT Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-weight: 600;
+    background-image: linear-gradient(63deg, rgb(194, 189, 189), rgb(247, 239, 239));
+    outline: none;
+} */
+
+.under{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #423f3f;
+    box-shadow: 0 0 5px 5px rgb(172, 166, 166);
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 768px){
+    nav h2,
+    nav .links button a{
+        font-size: 0.9rem;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+    }
+    .banner h4{
+        font-size: 0.93rem;
+    }
+
+    #image{
+        width: 9rem;
+        height: 9rem;
+        border-radius: 50%;
+        margin-top: -8%;
+        margin-bottom: 1.62rem;
+    }
+
+    .card{
+        max-width: 570px;
+    }
+    #head{
+        font-size: 0.96rem;
+    }
+
+    .word{
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    font{
+        font-size: 0.8rem;
+    }
+    
+    .connect{
+        margin: auto;
+        width: 80%;
+        margin-top: 0.9rem;
+    }
+
+    .connect button{
+        padding: .4rem;
+        margin: 0.6rem;
+        border-radius: 6px;
+        border: none;
+        font-size: .6rem;
+    }
+
+    i{
+        font-size: 1rem;
+        padding: .6rem;
+        cursor: pointer;
+    }
+
+    .form{
+        position: relative;
+        width: 20rem;
+    }
+
+    #email{
+        width: 90%;
+    }
+
+    .span-msg,
+    .form label{
+        font-size: 0.8rem;
+    }
+
+    #msg:focus ~ .span-msg,
+    #msg:not(:placeholder-shown)#msg:not(:focus) ~ .span-msg{ 
+        font-size: 0.7rem;
+    }
+
+    .form_input:focus ~ .form_label,
+    .form_input:not(:placeholder-shown).form_input:not(:focus) ~ .form_label{
+        font-size: 0.7rem; 
+    }
+
+    #send{
+        font-size: 0.8rem;
+    }
+
+    
+}
+
+@media(max-width: 610px){
+    .form{
+        width: 10rem;
+    }
+
+    .message-area{
+        max-width: 100%;
+    }
+
+    nav h2,
+    nav .links button a{
+        font-size: 0.9rem;
+    }
+    .banner h1{
+        font-size: 2rem;
+    }
+    .banner h4{
+        font-size: 0.85rem;
+    }
+
+    #image{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        margin-top: -10%;
+        margin-bottom: 1rem;
+    }
+
+    
+
+
+}
+
+@media(max-width: 439px){
+    .card{
+        width: 80%;
+    }
+}
+
+@media(max-width: 377px){
+    nav h2,
+    nav .links button a{
+        font-size: 0.7rem;
+    }
+    .banner h1{
+        font-size: 1.7rem;
+    }
+    .banner h4{
+        font-size: 0.93rem;
+    }
+    
+    .card{
+        max-width: 93%;
+    }
+}
+
+@media(max-width: 316px){
+    .card{
+        width: 95%;
+    }
+
+    nav .links{
+        display: none;
+    }
+
+    nav h2{
+        font-size: 0.9rem;
+    }
+}
